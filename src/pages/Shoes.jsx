@@ -5,7 +5,7 @@ import ListItems from "../components/ListItems";
 // List all shoes
 
 const Shoes = () => {
-  const allShoes = useSelector((state) => state.shoes.allShoes);
+  const allShoes = useSelector((state) => state.shoes.allShoes); //shoes comes from the rootReducer, allShoes comes from the initial state --> allShoes: [];
   const dispatch = useDispatch();
   const fetchAllShoes = () => {
     console.log("RUNNING DISPATCH FROM FETCHALLSHOES");
